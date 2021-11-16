@@ -1,0 +1,144 @@
+<ion-header [translucent]="true">
+  <ion-toolbar >
+    <ion-title class="hedercol" >
+      <center>
+          <img src="/assets/logo2.png" height="80px"  >
+      </center>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="heropage">
+        <div>
+          <center>
+           <img src="/assets/bg.png" height="230px"></center>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <h2 id="header" color="danger">Book Scheduale {{this.rows}}</h2>
+      <form #form="ngForm" role="form"  (ngSubmit)="onSubmit(form.value)" class="form-horizontal"  >
+        <ion-item lines="full">
+          <ion-label position="">First Name</ion-label>
+          <ion-input type="text" name="firstname"  required slot="end"  ngModel   ></ion-input>
+        </ion-item>
+    
+        <ion-item lines="full">
+          <ion-label position="" >Last Name</ion-label>
+          <ion-input type="text"  name="lastname"  required slot="end" ngModel  ></ion-input>
+        </ion-item>
+    
+        <ion-item lines="full">
+          <ion-label position="" >Address</ion-label>
+          <ion-input type="text"  name="address"  required slot="end" ngModel  ></ion-input>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label position="" >city</ion-label>
+          <ion-input type="text"  name="city"  required slot="end" ngModel  ></ion-input>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label position="" >state</ion-label>
+          <ion-input type="text"  name="state"  required slot="end" ngModel  ></ion-input>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label position="" >postal</ion-label>
+          <ion-input type="text"  name="postal"  required slot="end" ngModel  ></ion-input>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label position="" >phone</ion-label>
+          <ion-input type="text" maxlength="10" name="phone"  required slot="end" ngModel  ></ion-input>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label position="" >email</ion-label>
+          <ion-input type="email"  name="email"  required slot="end" ngModel  ></ion-input>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label position="" >requesttype</ion-label>
+          <select class="form-select"  name="requesttype" required slot="end" ngModel>
+            <option >Heating</option>
+            <option>Air Conditioning</option>
+            <option>Indoor Air Quality</option>
+            <option>green Energy Solutions</option>
+            <option>Duct Cleaning</option>
+            <option>Plumbing</option>
+            <option>Water Heaters</option>
+            <option>Attic Insulations</option>
+            <option>HVAC Installation</option>
+        </select>
+        </ion-item>
+
+         <ion-item lines="full"> 
+          <ion-label position="" >problem</ion-label>
+        
+        <ion-item>
+          <textarea name="problem"  ngModel required slot="end"></textarea>
+        </ion-item>
+        </ion-item>
+        
+        <ion-item lines="full">
+          <ion-label position="" >Date</ion-label>
+          <ion-input type="date"  name="date"  required slot="end" ngModel  ></ion-input>
+        </ion-item>
+    
+        <!-- <ion-input type="time" name="time"  required slot="end" ngModel  > </ion-input> -->
+
+        <ion-item lines="full">
+          <ion-label position="" >time</ion-label>
+          
+          <select class="form-select"  name="time" required slot="end" ngModel> 
+            <option >8am-10am</option>
+            <option>10am-12am</option>
+            <option>12pm-2pm</option>
+            <option>2pm-4pm</option>
+            <option>4pm-6pm</option>
+            <option>4pm-8pm</option>
+          </select>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label position="" >Alernate Date</ion-label>
+          <ion-input type="date"  name="atdate"  required slot="end" ngModel  ></ion-input>
+        </ion-item>
+    
+         <!-- <ion-input type="time" name="attime"  required slot="end" ngModel  > </ion-input> -->
+
+        <ion-item lines="full">
+          <ion-label position="" >Alernate time</ion-label>
+          <select class="form-select"  name="attime" required slot="end" ngModel> 
+            <option >8am-10am</option>
+            <option>10am-12am</option>
+            <option>12pm-2pm</option>
+            <option>2pm-4pm</option>
+            <option>4pm-6pm</option>
+            <option>4pm-8pm</option>
+          </select>
+        </ion-item>
+             
+
+         
+        
+            <ion-row>
+              <ion-col>
+                <ion-button type="submit" color="danger" expand="block"  >Submit</ion-button>
+              </ion-col>
+            </ion-row>
+        
+           </form>
+           
+          <!-- </script> -->
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+  
